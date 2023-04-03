@@ -11,6 +11,8 @@ const Home = () => {
     queryFn: dictionary,
   });
 
+  console.log("reading data", data);
+
   // const id = "qwttyu";
   // const wallet = "ssss";
 
