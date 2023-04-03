@@ -1,10 +1,18 @@
-import React from 'react'
+/** @format */
 
+import React from "react";
+import { useQuery, useMutation } from "@tanstack/react-query";
+import { dictionary } from "../util/api";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const { data } = useQuery({
+    queryKey: ["dictionary"],
+    queryFn: dictionary,
+  });
 
-export default Home
+  const { mutate, isLoading } = useMutation({});
+
+  return <div>Home</div>;
+};
+
+export default Home;
