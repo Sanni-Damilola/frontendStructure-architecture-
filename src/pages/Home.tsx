@@ -25,7 +25,14 @@ const Home = () => {
   //   });
   // };
 
-  return <div>Home</div>;
+  return (
+    <div>
+      <h2>Home Key</h2>
+      {data?.list?.map((el: any) => (
+        <p>{el?.definition}</p>
+      ))}
+    </div>
+  );
 };
 
 export default Home;
