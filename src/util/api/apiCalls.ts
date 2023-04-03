@@ -5,7 +5,7 @@ import axios from "./api";
 
 export const dictionary = async () => {
   return await axios
-    .get("/define")
+    .get("/define", { params: { term: "wat" } })
     .then((res) => res.data)
     .catch((err) => {
       return err;
