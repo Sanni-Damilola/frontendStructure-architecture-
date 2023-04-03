@@ -2,15 +2,14 @@
 
 import React from "react";
 import { useQuery, useMutation } from "@tanstack/react-query";
-import { dictionary } from "../util/api";
+import { dictionary, postUser } from "../util/api";
+import { Iuser } from "../types";
 
 const Home = () => {
   const { data } = useQuery({
     queryKey: ["dictionary"],
     queryFn: dictionary,
   });
-
-  const { mutate, isLoading } = useMutation({});
 
   return <div>Home</div>;
 };
