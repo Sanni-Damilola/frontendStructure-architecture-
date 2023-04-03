@@ -6,7 +6,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
-import AllRoute from "./routes/AllRoute";
+import { element } from "./routes/AllRoute";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={AllRoute}></RouterProvider>
+    <RouterProvider router={element}></RouterProvider>
   </React.StrictMode>,
 );
 
