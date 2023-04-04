@@ -1,1 +1,4 @@
-export * from "./homeLayout"
+/** @format */
+
+export * from "./homeLayout";
+export * from "./DashBoardLayout";

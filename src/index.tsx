@@ -8,7 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import { RouterProvider } from "react-router-dom";
 import { Loading } from "./utils/hoc";
-import { element } from "./routes/Allroutes";
+// import { element } from "./routes/Allroutes";
+import { dashBoardElement } from "./routes/DashBoardRoute";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
-      <RouterProvider router={element}></RouterProvider>
+      <RouterProvider router={dashBoardElement}></RouterProvider>
     </Suspense>
   </React.StrictMode>,
 );
