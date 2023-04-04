@@ -1,9 +1,9 @@
 /** @format */
 
 import { createBrowserRouter } from "react-router-dom";
-import { HomeLayout } from "../components";
 import { lazy } from "react";
 import { ErrorBoundary, NotFound } from "../utils/hoc";
+import { HomeLayout } from "../components";
 
 const Home = lazy(() => import("../pages/Home"));
 

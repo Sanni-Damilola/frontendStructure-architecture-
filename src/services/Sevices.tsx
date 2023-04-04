@@ -1,9 +1,9 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 
 const Sevices = () => {
-  return (
-    <div>Sevices</div>
-  )
-}
+  return <div>Sevices</div>;
+};
 
-export default Sevices
+export default Sevices;
