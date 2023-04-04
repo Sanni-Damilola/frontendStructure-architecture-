@@ -1,2 +1,3 @@
-export * from "./dashboardblock"
-export * from "./homeblock"
+/** @format */
+
+export * from "./HomeBlocks";

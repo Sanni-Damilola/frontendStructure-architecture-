@@ -1,2 +1,4 @@
-import {default as About} from "./About"
-import {default as Home} from "./Home"
+/** @format */
+
+export { default as About } from "./About";
+export { default as Home } from "./Home";
