@@ -1,3 +1,1 @@
-/** @format */
-
-export * from "./HomeLayout";
+export * from "./Homelayout"
