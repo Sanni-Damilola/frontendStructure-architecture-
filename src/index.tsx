@@ -5,17 +5,20 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-
-const client = new QueryClient();
+// import App from "./App";
+import { RouterProvider } from "react-router-dom";
+import { element } from "./routes/AllRoutes";
+import Loading from "./components/Loading";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <App />
-    
+    <Suspense fallback={<Loading />}>
+      {/* <App /> */}
+      <RouterProvider router={element}></RouterProvider>
+    </Suspense>
   </React.StrictMode>,
 );
 
