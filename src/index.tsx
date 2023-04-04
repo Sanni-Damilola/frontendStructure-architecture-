@@ -6,9 +6,9 @@ import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
-import Loading from "./utils/hoc/Loading";
 import { RouterProvider } from "react-router-dom";
-import { element } from "./routes/AllRoutes";
+import { element } from "./routes/AllRoute";
+import { Loading } from "./utils/hoc";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -17,8 +17,8 @@ root.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
       <RouterProvider router={element}></RouterProvider>
-      {/* <App /> */}
     </Suspense>
+    {/* <App /> */}
   </React.StrictMode>,
 );
 

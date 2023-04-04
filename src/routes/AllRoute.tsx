@@ -1,9 +1,9 @@
 /** @format */
 
-import React, { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { HomeLayout } from "../components";
 import { ErrorBoundary } from "../utils/hoc";
+import { lazy } from "react";
 
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
@@ -22,7 +22,9 @@ export const element = createBrowserRouter([
     ],
   },
   {
-    path: "/about",
+    path: "/About",
     element: <About />,
+    errorElement: <ErrorBoundary />,
+    hasErrorBoundary: true,
   },
 ]);

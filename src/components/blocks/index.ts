@@ -1,3 +1,3 @@
 /** @format */
 
-export * from "./homeBlocks";
+export * from "./HomeBlocks";
