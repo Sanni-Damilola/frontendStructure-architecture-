@@ -6,8 +6,6 @@ import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
-import { Loading } from "./utils/hoc";
-import { element } from "./routes/AllRoutes";
 import { RouterProvider } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
@@ -15,10 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Suspense fallback={<Loading />}>
-      <RouterProvider router={element}></RouterProvider>
-    </Suspense>
+    <App />
   </React.StrictMode>,
 );
 
