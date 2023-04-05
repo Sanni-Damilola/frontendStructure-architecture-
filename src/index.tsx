@@ -8,16 +8,24 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import { RouterProvider } from "react-router-dom";
 import { Loading } from "./utils/hoc";
-// import { element } from "./routes/Allroutes";
+import { element } from "./routes/Allroutes";
 import { dashBoardElement } from "./routes/DashBoardRoute";
 
+const datas = {
+  name: "null",
+};
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
+
 root.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
-      <RouterProvider router={dashBoardElement}></RouterProvider>
+      {datas?.name === "string" ? (
+        <RouterProvider router={dashBoardElement}></RouterProvider>
+      ) : (
+        <RouterProvider router={element}></RouterProvider>
+      )}
     </Suspense>
   </React.StrictMode>,
 );
