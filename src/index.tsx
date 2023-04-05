@@ -11,7 +11,7 @@ import { element } from "./routes/Allroutes";
 import { dashBoardElement } from "./routes/DashBoardRoute";
 
 const datas = {
-  name: 444,
+  name: 22,
 };
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
