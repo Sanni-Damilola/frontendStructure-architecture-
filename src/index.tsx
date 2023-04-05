@@ -3,16 +3,15 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
+// import App from "./App";
 import { RouterProvider } from "react-router-dom";
 import { Loading } from "./utils/hoc";
 import { element } from "./routes/Allroutes";
 import { dashBoardElement } from "./routes/DashBoardRoute";
 
 const datas = {
-  name: "null",
+  name: 444,
 };
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -21,7 +20,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
-      {datas?.name === "string" ? (
+      {typeof datas?.name === "string" ? (
         <RouterProvider router={dashBoardElement}></RouterProvider>
       ) : (
         <RouterProvider router={element}></RouterProvider>
